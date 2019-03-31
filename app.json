@@ -34,7 +34,9 @@
       "bundleIdentifier": "com.Stanford.Daily.App",
       "buildNumber": "8",
       "appStoreUrl": "https://itunes.apple.com/app/stanford-daily/id1341270063",
-      "supportsTablet": true
+      "supportsTablet": true,
+      "publishBundlePath": "ios/stanford-daily/Supporting/shell-app.bundle",
+      "publishManifestPath": "ios/stanford-daily/Supporting/shell-app-manifest.json"
     },
     "android": {
       "package": "com.Stanford.Daily.App",
@@ -44,10 +46,17 @@
       "permissions": [
         "ACCESS_COARSE_LOCATION",
         "NOTIFICATIONS"
-      ]
+      ],
+      "publishBundlePath": "android/app/src/main/assets/shell-app.bundle",
+      "publishManifestPath": "android/app/src/main/assets/shell-app-manifest.json"
     },
     "notification": {
       "icon": "./assets/icon.png"
+    },
+    "isDetached": true,
+    "detach": {
+      "iosExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/ios-v2.10.2-sdk32.0.0-c59c23cd-1d49-49d2-a633-d03f9d554cf6.tar.gz",
+      "androidExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/android-v2.10.7-sdk32.0.0-3ff7f3bf-8e53-4d61-b963-1d7d92a77d79.tar.gz"
     }
   }
 }
